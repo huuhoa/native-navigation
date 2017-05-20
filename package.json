@@ -1,5 +1,5 @@
 {
-  "name": "native-navigation",
+  "name": "@nfcampos/native-navigation",
   "version": "0.2.1",
   "description": "Native Navigation for React Native",
   "main": "index.js",
