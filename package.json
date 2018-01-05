@@ -4,10 +4,10 @@
   "description": "Native Navigation for React Native",
   "main": "index.js",
   "scripts": {
-    "postinstall":"sh postinstall.sh",
+    "postinstall": "sh postinstall.sh",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "run:packager": "./node_modules/react-native/packager/packager.sh",
-    "run:ios": "react-native run-ios --project-path ./example/ios",
+    "run:ios": "react-native run-ios --project-path ./example/ios --simulator 'iPhone X'",
     "start:android": "adb shell am start -n com.airbnb.android.react.navigation.example/.MainActivity",
     "run:android": "./gradlew installDebug && npm run start:android",
     "lint": "eslint ./",
@@ -42,6 +42,8 @@
     "react-native": ">=0.50"
   },
   "dependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.50",
     "prop-types": "^15.5.10",
     "react-native-safe-module": "^1.1.0"
   },
